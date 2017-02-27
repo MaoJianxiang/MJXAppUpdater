@@ -1,0 +1,6 @@
+framework module MJXAppUpdater {
+  umbrella header "MJXAppUpdater-umbrella.h"
+
+  export *
+  module * { export * }
+}

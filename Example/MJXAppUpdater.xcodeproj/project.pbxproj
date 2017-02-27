@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		341E49A31E64A0A200736B7D /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 341E499D1E64A0A200736B7D /* .gitkeep */; };
+		341E49A41E64A0A200736B7D /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 341E499F1E64A0A200736B7D /* .gitkeep */; };
+		341E49A51E64A0A200736B7D /* MJXAppUpdater.m in Sources */ = {isa = PBXBuildFile; fileRef = 341E49A11E64A0A200736B7D /* MJXAppUpdater.m */; };
+		341E49A61E64A0A200736B7D /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 341E49A21E64A0A200736B7D /* ReplaceMe.m */; };
 		370B03E58714D3D393A4964D /* Pods_MJXAppUpdater_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45F28B2D5A1683CCA5DF3FCC /* Pods_MJXAppUpdater_Example.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
@@ -37,6 +41,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		341E499D1E64A0A200736B7D /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		341E499F1E64A0A200736B7D /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		341E49A01E64A0A200736B7D /* MJXAppUpdater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJXAppUpdater.h; sourceTree = "<group>"; };
+		341E49A11E64A0A200736B7D /* MJXAppUpdater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJXAppUpdater.m; sourceTree = "<group>"; };
+		341E49A21E64A0A200736B7D /* ReplaceMe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReplaceMe.m; sourceTree = "<group>"; };
 		45F28B2D5A1683CCA5DF3FCC /* Pods_MJXAppUpdater_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MJXAppUpdater_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5434D876243C0B0AD78D221B /* Pods-MJXAppUpdater_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MJXAppUpdater_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MJXAppUpdater_Tests/Pods-MJXAppUpdater_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* MJXAppUpdater_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MJXAppUpdater_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,14 +67,14 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		646E53C1B26831B501DF695A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		646E53C1B26831B501DF695A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		76172A28FBD40D05347E9847 /* Pods-MJXAppUpdater_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MJXAppUpdater_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MJXAppUpdater_Tests/Pods-MJXAppUpdater_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		896D65EA93D9A2F29AF480F6 /* Pods-MJXAppUpdater_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MJXAppUpdater_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MJXAppUpdater_Example/Pods-MJXAppUpdater_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		977CBE43F93C16D04CB2E5FA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		977CBE43F93C16D04CB2E5FA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		9FBFEECEEC52C71EB0CFDC73 /* Pods_MJXAppUpdater_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MJXAppUpdater_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A8E916DE177852CE7C55398F /* MJXAppUpdater.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = MJXAppUpdater.podspec; path = ../MJXAppUpdater.podspec; sourceTree = "<group>"; };
+		A8E916DE177852CE7C55398F /* MJXAppUpdater.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MJXAppUpdater.podspec; path = ../MJXAppUpdater.podspec; sourceTree = "<group>"; };
 		AC87A660024263A8B6E62ABB /* Pods-MJXAppUpdater_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MJXAppUpdater_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-MJXAppUpdater_Example/Pods-MJXAppUpdater_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,9 +104,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		341E499B1E64A0A200736B7D /* MJXAppUpdater */ = {
+			isa = PBXGroup;
+			children = (
+				341E499C1E64A0A200736B7D /* Assets */,
+				341E499E1E64A0A200736B7D /* Classes */,
+			);
+			name = MJXAppUpdater;
+			path = ../MJXAppUpdater;
+			sourceTree = "<group>";
+		};
+		341E499C1E64A0A200736B7D /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				341E499D1E64A0A200736B7D /* .gitkeep */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		341E499E1E64A0A200736B7D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				341E499F1E64A0A200736B7D /* .gitkeep */,
+				341E49A01E64A0A200736B7D /* MJXAppUpdater.h */,
+				341E49A11E64A0A200736B7D /* MJXAppUpdater.m */,
+				341E49A21E64A0A200736B7D /* ReplaceMe.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
+				341E499B1E64A0A200736B7D /* MJXAppUpdater */,
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F593195388D20070C39A /* Example for MJXAppUpdater */,
 				6003F5B5195388D20070C39A /* Tests */,
@@ -281,6 +320,8 @@
 			files = (
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
+				341E49A31E64A0A200736B7D /* .gitkeep in Resources */,
+				341E49A41E64A0A200736B7D /* .gitkeep in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
@@ -396,7 +437,9 @@
 			files = (
 				6003F59E195388D20070C39A /* MMAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* MMViewController.m in Sources */,
+				341E49A61E64A0A200736B7D /* ReplaceMe.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				341E49A51E64A0A200736B7D /* MJXAppUpdater.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

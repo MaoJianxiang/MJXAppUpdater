@@ -7,12 +7,13 @@
 //
 
 #import "MMAppDelegate.h"
+#import "MJXAppUpdater.h"
 
 @implementation MMAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    [[MJXAppUpdater sharedUpdater] showUpdateWithConfirmation];
     return YES;
 }
 

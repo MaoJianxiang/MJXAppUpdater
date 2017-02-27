@@ -1,0 +1,6 @@
+framework module Pods_MJXAppUpdater_Tests {
+  umbrella header "Pods-MJXAppUpdater_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -26,7 +26,9 @@
 + (id)sharedUpdater;
 
 //强制更新
-- (void)showUpdateWithForce;
+//available:即打开AppStore失败后,App是否也能暂时继续使用。
+//若传NO,即打开AppStore失败后会退出程序，传nil和YES时，默认也可以暂时网络不好时使用。
+- (void)showUpdateWithForceAllowNetworkFailure:(BOOL)available;
 
 //更新提示
 - (void)showUpdateWithConfirmation;

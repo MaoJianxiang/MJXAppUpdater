@@ -13,7 +13,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    [[MJXAppUpdater sharedUpdater] showUpdateWithConfirmation];
+//    #pragma mark - 展示版本更新提示
+//    [[MJXAppUpdater sharedUpdater] showUpdateWithConfirmation];
+#pragma mark - 强制更新app到最新版本，参数available若传NO,即打开AppStore失败后也不能使用，传nil时，默认也可以暂时网络不好时使用。
+    [[MJXAppUpdater sharedUpdater] showUpdateWithForceAllowNetworkFailure:nil];
     return YES;
 }
 

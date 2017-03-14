@@ -8,7 +8,20 @@
 
 #import "MJXAppUpdater.h"
 
+@interface MJXAppUpdater()
+// 判断打开AppStore失败后是否可用
+@property(assign,nonatomic)BOOL isAvailable;;
+
+@end
+
 @implementation MJXAppUpdater
+
+-(BOOL)isIsAvailable{
+    if (!_isAvailable) {
+        _isAvailable = YES;
+    }
+    return _isAvailable;
+}
 
 #pragma mark - 初始化
 +(id)sharedUpdater{
@@ -33,7 +46,11 @@
 
 #pragma mark - 强制更新
 
-- (void)showUpdateWithForce{
+- (void)showUpdateWithForceAllowNetworkFailure:(BOOL)available{
+    if (available) {
+        self.isAvailable = available;
+    }
+    
     BOOL hasConnection = [self hasConnection];
     if (!hasConnection) return;
     
@@ -125,6 +142,12 @@ NSString *appStoreURL = nil;
         } else {
             UIAlertView *cantOpenUrlAlert = [[UIAlertView alloc] initWithTitle:@"提示" message:@"不能打开应用商店,请稍后重试" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
             [cantOpenUrlAlert show];
+            
+            if (!self.isAvailable) {
+                dispatch_after(2.5, dispatch_get_main_queue(), ^{
+                    exit(0);
+                });
+            }
         }
     }
 }
